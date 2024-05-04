@@ -196,7 +196,7 @@ h1 {
     font-size: 1.85rem;
     font-weight: 600;
     left: 50%;
-    top: -5.5px;
+    top: -8.5px;
     transform: translateX(-50%) ;
 }
 
@@ -257,6 +257,15 @@ h1 {
 }
 
 
-@media max {
-    
+@media only screen and (max-width: 767px) {
+    .checkbox-div input:checked::before {
+        content: '✔';
+        position: absolute;
+        color: var(--dk-text);
+        font-size: 1.50rem;
+        font-weight: 600;
+        left: 50%;
+        top: -11px;
+        transform: translateX(-50%) ;
+    }
 }
